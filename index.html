@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Agent</title>
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FONT FAMILY CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ICONS CDN -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <!-- SLIDER CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="assets/css/common.css" class="rel">
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <!-- HEADER AND BANNER -->
+        <section class="h-screen bg-[url('assets/images/Gradient1.png')] relative">
+            <div class="banner-img absolute left-0 top-0 ">
+                <img src="assets/images/Home-banner2.png" alt="banner">
+            </div>
+            <div class="header-2 ">
+                <nav class=""> 
+                    <div class="container px-4 mx-auto md:flex justify-between md:items-center py-2 md:py-[40px]  border-b-[0.2px] border-white">
+                        <div class="flex justify-between items-center ">
+                            <div class="logo">
+                                <a href="#" class="font-bold text-xl text-indigo-600"><img src="assets/images/Logo.png" alt=""></a>
+                            </div>
+                            <button
+                                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+                                id="navbar-toggle">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <ul class="hidden md:flex flex-col md:flex-row  mt-3 md:mt-0 gap-[40px]" id="navbar-collapse">
+                            <li><p class="text-white">Home</p></li>
+                            <li><p class="text-[#B3B3B3] hover:text-white">About Us</p></li>
+                            <li><p class="text-[#B3B3B3] hover:text-white">Solutions</p></li>
+                            <li><p class="text-[#B3B3B3] hover:text-white">Buy-Sell</p></li>
+                            <li><p class="text-[#B3B3B3] hover:text-white">Contact</p></li>
+                        </ul>
+                        <div class="contact-btn">
+                            <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
+                             after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
+                             before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- BANNER -->
+            <div class="banner py-[77px] ps-[95px]">
+                <div class="flex items-center">
+                    <div class="w-3/6">
+                        <div class="banner-content items-center flex gap-[95px] justify-between">
+                            <div class="social-media flex flex-col items-center">
+                                <div class="img mb-[15px]">
+                                    <img src="assets/images/social-line.png" alt="social-line">
+                                </div>
+                                <div class="insta w-[50px] h-[50px] bg-[rgba(255,255,255,0.1)] rounded-full flex justify-center items-center">
+                                    <i class="fa-brands fa-square-instagram text-[23px] text-white"></i>
+                                </div>
+                                <div class="mt-[30px] w-[50px] h-[50px] bg-[rgba(255,255,255,0.1)] rounded-full flex justify-center items-center">
+                                    <i class="fa-brands fa-whatsapp text-[23px] text-white"></i>
+                                </div>
+                                <div class="mt-[30px] w-[50px] h-[50px] bg-[rgba(255,255,255,0.1)] rounded-full flex justify-center items-center">
+                                    <i class="fa-brands fa-twitter text-[23px] text-white"></i>
+                                </div>
+                                <div class="img mb-[15px] rotate-180 mt-[15px]">
+                                    <img src="assets/images/social-line.png" alt="social-line">
+                                </div>
+                            </div>
+                            <div class="banner-description">
+                                <h1 class="text-[55px] font-bold text-white">Import Export <span class="text-[#B0B7FF]">Agent for</span> International Trade</h1>
+                            <P class="text-white text--[18px]">Export Agent is the professional that your company needs if you are looking for buyers or suppliers in textile, food and beverages, agriculture products, aquaculture, plastics fields.</P>
+                            <div class="contact-btn mt-[35px]">
+                                <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
+                                 after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
+                                 before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-3/6">
+                        <img src="assets/images/home-banner-img.png" alt="home banner">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- TRANPORT SECTION -->
+         <section class="py-[150px] bg-[url('assets/images/gradient2.png')] relative">
+            <img src="assets/images/big-moon.png" class="absolute right-[0px] bottom-[0px]" alt="moon">
+            <img src="assets/images/small-moons.png" class="absolute left-[20px] top-[20px]" alt="moon">
+            <div class="container mx-auto">
+                <div class="flex">
+                    <div class="lg:w-3/6 lg:px-[12px] w-full">
+                        <img src="assets/images/export-Img.png" alt="exports">
+                    </div>
+                    <div class="banner-content lg:w-3/6 lg:px-[12px] w-full items-center flex  justify-between">
+                        <div class="banner-description">
+                            <h2 class="lg:text-[45px] md:text-[35px] font-bold text-white">Export-import from <span class="text-[#B0B7FF]">India made easy.</span> </h2>
+                            <P class="text-white text--[18px]">See how we have can help your company establish an international trade.</P>
+                            <div class="export-options flex flex-wrap mt-[25px] mb-[43px] ">
+                                <div class="flex w-3/6 gap-[15px] items-start mb-[10px]">
+                                    <img src="assets/images/orange-Arrow.svg" alt="arrow" class="mt-[10px]" >
+                                    <p class="text-[#B9B9B9] text-[18px]">Finds the best approach to exporting for your company.</p>
+                                </div>
+                                <div class="flex w-3/6 gap-[15px] items-start mb-[10px]">
+                                    <img src="assets/images/orange-Arrow.svg" alt="arrow" class="mt-[10px]" >
+                                    <p class="text-[#B9B9B9] text-[18px]">Finds the best approach to exporting for your company.</p>
+                                </div>
+                                <div class="flex w-3/6 gap-[15px] items-start mb-[10px]">
+                                    <img src="assets/images/orange-Arrow.svg" alt="arrow" class="mt-[10px]" >
+                                    <p class="text-[#B9B9B9] text-[18px]">Negotiates on prices and business conditions.</p>
+                                </div>
+                                <div class="flex w-3/6 gap-[15px] items-start mb-[10px]">
+                                    <img src="assets/images/orange-Arrow.svg" alt="arrow" class="mt-[10px]" >
+                                    <p class="text-[#B9B9B9] text-[18px]">Import of products and services from India.</p>
+                                </div>
+
+                            </div>
+                        <div class="contact-btn mt-[35px]">
+                            <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
+                             after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
+                             before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>  
+          
+         </section>
+         <!-- BUSINESS EXPANSION SECTION -->
+          <section class="py-[150px]">
+            <div class="container mx-auto">
+                <div class="flex justify-between mb-[50px]">
+                    <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white">Expand your <span class="text-[#B0B7FF]"> business </span>globally</h2>
+                    <div class="view-btn mt-[35px]">
+                        <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
+                         after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
+                         before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">View More <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="speciality-slider ps-[180px]">
+                <div class="business me-3">
+                    <div class="bg-[url('assets/images/gradient2.png')] p-[30px] relative overflow-hidden">
+                        <img src="assets/images/heart.png" alt="heart" class="absolute right-[-20px] top-[-70px]" >
+                        <div class="leaf w-[70px] h-[70px] bg-[#0F0B2C] border-[#1D164F] border-[1px] mb-[30px] flex justify-center items-center">
+                            <img src="assets/images/leaf.png" alt="leaf">
+                        </div>
+                        <div class="content">
+                            <h3 class="text-[25px] text-white mb-[8px]">Grains</h3>
+                            <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac bibendum vel, semper sed ex.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="business me-3">
+                    <div class="bg-[url('assets/images/gradient2.png')] p-[30px] relative overflow-hidden">
+                        <img src="assets/images/heart.png" alt="heart" class="absolute right-[-20px] top-[-70px]" >
+                        <div class="leaf w-[70px] h-[70px] bg-[#0F0B2C] border-[#1D164F] border-[1px] mb-[30px] flex justify-center items-center">
+                            <img src="assets/images/toys.png" alt="toys">
+                        </div>
+                        <div class="content">
+                            <h3 class="text-[25px] text-white mb-[8px]">Toys</h3>
+                            <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac bibendum vel, semper sed ex.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="business me-3">
+                    <div class="bg-[url('assets/images/gradient2.png')] p-[30px] relative overflow-hidden">
+                        <img src="assets/images/heart.png" alt="heart" class="absolute right-[-20px] top-[-70px]" >
+                        <div class="leaf w-[70px] h-[70px] bg-[#0F0B2C] border-[#1D164F] border-[1px] mb-[30px] flex justify-center items-center">
+                            <img src="assets/images/shrimps.png" alt="Shrimps">
+                        </div>
+                        <div class="content">
+                            <h3 class="text-[25px] text-white mb-[8px]">Shrimps</h3>
+                            <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac bibendum vel, semper sed ex.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="business me-3">
+                    <div class="bg-[url('assets/images/gradient2.png')] p-[30px] relative overflow-hidden">
+                        <img src="assets/images/heart.png" alt="heart" class="absolute right-[-20px] top-[-70px]" >
+                        <div class="leaf w-[70px] h-[70px] bg-[#0F0B2C] border-[#1D164F] border-[1px] mb-[30px] flex justify-center items-center">
+                            <img src="assets/images/leaf.png" alt="leaf">
+                        </div>
+                        <div class="content">
+                            <h3 class="text-[25px] text-white mb-[8px]">Grains</h3>
+                            <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac bibendum vel, semper sed ex.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="business me-3">
+                    <div class="bg-[url('assets/images/gradient2.png')] p-[30px] relative overflow-hidden">
+                        <img src="assets/images/heart.png" alt="heart" class="absolute right-[-20px] top-[-70px]" >
+                        <div class="leaf w-[70px] h-[70px] bg-[#0F0B2C] border-[#1D164F] border-[1px] mb-[30px] flex justify-center items-center">
+                            <img src="assets/images/leaf.png" alt="leaf">
+                        </div>
+                        <div class="content">
+                            <h3 class="text-[25px] text-white mb-[8px]">Grains</h3>
+                            <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac bibendum vel, semper sed ex.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="business me-3">
+                    <div class="bg-[url('assets/images/gradient2.png')] p-[30px] relative overflow-hidden">
+                        <img src="assets/images/heart.png" alt="heart" class="absolute right-[-20px] top-[-70px]" >
+                        <div class="leaf w-[70px] h-[70px] bg-[#0F0B2C] border-[#1D164F] border-[1px] mb-[30px] flex justify-center items-center">
+                            <img src="assets/images/leaf.png" alt="leaf">
+                        </div>
+                        <div class="content">
+                            <h3 class="text-[25px] text-white mb-[8px]">Grains</h3>
+                            <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac bibendum vel, semper sed ex.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- MAIN FEATURES -->
+           <section class="py-[150px] bg-[url('assets/images/gradient2.png')]">
+            <div class="container mx-auto">
+                <div class="heading mb-[50px]">
+                    <div class="gradient-logo mb-[30px] text-center">
+                        <img src="assets/images/gradient-logo.png" class="m-auto" alt="logo">
+                        <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white">Helping bridge the divide. <span class="text-[#B0B7FF]"> divide.</span></h2>
+                        <h5 class="lg:text-[18px] md:text-[16px] text-[13px] w-[65%] text-white m-auto">In our understanding, every entrepreneur or organization have their offerings to impact businesses, by which they generate profit. There is already an existing paradigm of growth for them. But many are facing challenges when it comes to take their offerings to serve and impact businesses internationally. Whether you’re at the early stage exploring opportunities to trade your products globally or deep in the process, we've got you covered.</h5>
+                             <div class="contact-btn mt-[35px]">
+                                <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
+                                 after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
+                                 before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Get Started Here <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap  ">
+                        <div class="lg:w-1/3 w-full relative px-[25px] before:w-[10%] ">
+                        <!-- <div class="lg:w-1/3 w-full relative px-[25px] before:w-[10%] before:h-[2px] before:absolute before:right-[-5%] before:top-[50%] before:bg-[#3F5BA9] "> -->
+                            <div class="feature p-[30px] bg-[url('assets/images/gradient2.png')]">
+                                <div class=" relative  ">
+                                    <div class="leaf mb-[30px] ">
+                                        <img src="assets/images/logistics.png"class="m-auto" alt="leaf">
+                                    </div>
+                                    <div class="content mb-[30px] text-center">
+                                        <h3 class="text-[25px] text-white ">Logistics Management</h3>
+                                        <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin.</p>
+                                        <div class="number absolute bottom-[-44%]  left-[44%]  bg-[rgba(74,108,247,0.1)] flex justify-center items-center w-[46px] h-[46px] rounded-full ">
+                                            <h3 class="text-[18px] text-white">01</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 relative w-full px-[25px] before:w-[10%] ">
+                            <div class="feature p-[30px] bg-[url('assets/images/gradient2.png')]">
+                                <div class=" relative  ">
+                                    <div class="leaf mb-[30px] ">
+                                        <img src="assets/images/quality.png"class="m-auto" alt="leaf">
+                                    </div>
+                                    <div class="content mb-[30px] text-center">
+                                        <h3 class="text-[25px] text-white ">Quality Control</h3>
+                                        <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin.</p>
+                                        <div class="number absolute bottom-[-44%]  left-[44%]  bg-[rgba(74,108,247,0.1)] flex justify-center items-center w-[46px] h-[46px] rounded-full ">
+                                            <h3 class="text-[18px] text-white">02</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 w-full px-[25px] ">
+                            <div class="feature p-[30px] bg-[url('assets/images/gradient2.png')]">
+                                <div class=" relative  ">
+                                    <div class="leaf mb-[30px] ">
+                                        <img src="assets/images/bespoke.png"class="m-auto" alt="leaf">
+                                    </div>
+                                    <div class="content mb-[30px] text-center">
+                                        <h3 class="text-[25px] text-white ">Bespoke Production</h3>
+                                        <p class="text-[#B9B9B9] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin.</p>
+                                        <div class="number absolute bottom-[-44%]  left-[44%]  bg-[rgba(74,108,247,0.1)] flex justify-center items-center w-[46px] h-[46px] rounded-full ">
+                                            <h3 class="text-[18px] text-white">03</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           </section>
+
+           <!-- WORK SECTION -->
+            <section class="py-[150px]">
+                <div class="container mx-auto">
+                    <div class="heading text-center mb-[50px]">
+                        <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white">Let's do incredible<span class="text-[#B0B7FF]"> work together. </span></h2>
+                        <h5 class="lg:text-[18px] text-[#B9B9B9] md:text-[16px] text-[13px] w-[65%] text-white m-auto">Answer a few questions to put our resources to work on your requirements.</h5>
+                    </div>
+                    <div class="work-menu flex  flex-wrap" >
+                        <div class="lg:w-1/2 w-full">
+                            <img src="assets/images/work-img.png" alt="work">
+                        </div>
+                        <div class="lg:w-1/2 w-full ">
+                            <form action="" class="p-[30px] bg-[url('assets/images/bg-3.png')] bg-cover flex flex-wrap ">
+                                <div class=" lg:w-1/2 w-full px-[12px] mb-[20px]">
+                                    <input type="text" class="w-full border-[0.5px] inter p-[20px] border-[#rgba(255,255,255,0.2)] text-[16px] text-[#6C6785] p-[10px] bg-[#0A0426] rounded mt-[10px]" placeholder="Enter your name">
+                                </div>
+                                <div class=" lg:w-1/2 w-full px-[12px] mb-[20px]">
+                                    <input type="email" class="w-full border-[0.5px] inter p-[20px] border-[#rgba(255,255,255,0.2)] text-[16px] text-[#6C6785] p-[10px] bg-[#0A0426] rounded mt-[10px]" placeholder="Enter your email address">
+                                </div>
+                                <div class=" lg:w-1/2 w-full px-[12px] mb-[20px]">
+                                    <input type="text" class="w-full border-[0.5px] inter p-[20px] border-[#rgba(255,255,255,0.2)] text-[16px] text-[#6C6785] p-[10px] bg-[#0A0426] rounded mt-[10px]" placeholder="Enter your company name">
+                                </div>
+                                <div class=" lg:w-1/2 w-full px-[12px] mb-[20px]">
+                                    <input type="text" class="w-full border-[0.5px] inter p-[20px] border-[#rgba(255,255,255,0.2)] text-[16px] text-[#6C6785] p-[10px] bg-[#0A0426] rounded mt-[10px]" placeholder="Enter your industry">
+                                </div>
+                                <div class=" w-full px-[12px] mb-[20px]">
+                                   <textarea name="description"  cols="10"  rows="4" class="w-full border-[0.5px] w-full inter p-[20px] border-[#rgba(255,255,255,0.2)] text-[16px] text-[#6C6785] p-[10px] bg-[#0A0426] rounded mt-[10px]" placeholder="Enter your message"></textarea>
+                                </div>
+                                <div class=" w-full px-[12px] mb-[20px]">
+                                    <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
+                                     after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
+                                     before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Submit<span><i class="fa-solid fa-arrow-right"></i></span></button>
+                                </div>
+                            </form>
+                        </div>
+                      
+                    </div>
+                </div>
+            </section>
+
+           <!-- TESTIMONIAL SECTION -->
+           <section class="py-[150px] bg-[rgba(74,108,247,0.01)]">
+            <div class="container mx-auto">
+                <div class="work-menu testimonial-slider" >
+                    <div class=" item ">
+                        <div class="flex flex-wrap items-center">
+                            <div class="w-4/12">  
+                                <img src="assets/images/testimonial-slider.png"  alt="testimonial-img"  > 
+                            </div>
+                            <div class="w-8/12 ">
+                                <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white lg:w-[70%]"><span class="text-[#B0B7FF]">Client Testimonials: </span>Our Global Impact in Their Words</h2>
+                                <div class="desc">
+                                    <img src="assets/images/quote.png" alt="quote">
+                                    <p class="text-[18px] text-[#B9B9B9] px-[66px]">We Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien arcu, molestie ut eros pharetra, elementum semper ipsum. Duis in nulla gravida, tincidunt lorem nec, interdum arcu. Morbi aliquet vitae libero at</p>
+                                    <img src="assets/images/quote-2.png" class="ml-auto" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" item ">
+                        <div class="flex flex-wrap items-center">
+                            <div class="w-4/12">  
+                                <img src="assets/images/testimonial-slider.png"  alt="testimonial-img"  > 
+                            </div>
+                            <div class="w-8/12 ">
+                                <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white lg:w-[70%]"><span class="text-[#B0B7FF]">Client Testimonials: </span>Our Global Impact in Their Words</h2>
+                                <div class="desc">
+                                    <img src="assets/images/quote.png" alt="quote">
+                                    <p class="text-[18px] text-[#B9B9B9] px-[66px]">We Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien arcu, molestie ut eros pharetra, elementum semper ipsum. Duis in nulla gravida, tincidunt lorem nec, interdum arcu. Morbi aliquet vitae libero at</p>
+                                    <img src="assets/images/quote-2.png" class="ml-auto" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- BLOG SECTION -->
+             <section class="py-[150px]">
+                <div class="container mx-auto">
+                    <div class="heading flex flex-wrap justify-between mb-[50px]">
+                        <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white">Our Latest<span class="text-[#B0B7FF]"> Blogs</span></h2>
+                        <div class="view-btn">
+                            <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
+                             after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
+                             before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">View More <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                    <div class=" blog-slider">
+                        <div class="blog px-[15px]">
+                            <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                                <div class="blog-img">
+                                    <img src="assets/images/blog-1.png" class="w-full" alt="blog">
+                                </div>
+                                <div class="blog-content mb-[30px] p-[30px] ">
+                                    <h3 class="text-[25px] text-white mb-[8px] font-semibold">How to source Indian handicraft products in 2023</h3>
+                                    <p class="text-[#B9B9B9] text-[18px]">How to source Indian handicraft products are made in 2023</p>
+                                </div>
+                                <div class="information flex justify-between p-[20px]">
+                                    <div class="user">
+                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy</p>
+                                    </div>
+                                    <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                    <div class="date">
+                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>14 March, 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog px-[15px]">
+                            <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                                <div class="blog-img">
+                                    <img src="assets/images/blog-2.png" class="w-full" alt="blog">
+                                </div>
+                                <div class="blog-content mb-[30px] p-[30px] ">
+                                    <h3 class="text-[25px] text-white mb-[8px] font-semibold">Why you should hire an export agent?</h3>
+                                    <p class="text-[#B9B9B9] text-[18px]">We are building a new source of overseas sales for Indian firms. Having been a country.</p>
+                                </div>
+                                <div class="information flex justify-between p-[20px]">
+                                    <div class="user">
+                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy</p>
+                                    </div>
+                                    <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                    <div class="date">
+                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>5 Jul, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog px-[15px]">
+                            <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                                <div class="blog-img">
+                                    <img src="assets/images/blog-3.png" class="w-full" alt="blog">
+                                </div>
+                                <div class="blog-content mb-[30px] p-[30px] ">
+                                    <h3 class="text-[25px] text-white mb-[8px] font-semibold">Importing onions from India Made Easy</h3>
+                                    <p class="text-[#B9B9B9] text-[18px]">All you need to know about Onions Scenario before Importing from India According to India</p>
+                                </div>
+                                <div class="information flex justify-between p-[20px]">
+                                    <div class="user">
+                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy</p>
+                                    </div>
+                                    <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                    <div class="date">
+                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28 June, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             </section>
+             
+             <!-- FAQ SECTION -->
+              <section class="py-[150px] relative  bg-[rgba(74,108,247,0.01)]">
+                <img src="assets/images/faq-side.png" class="absolute left-0 top-[50px]" alt="">
+                <img src="assets/images/faq-side2.png" class="absolute right-0 bottom-[50px]" alt="">
+                <div class="container mx-auto">
+                    <div class="heading text-center mb-[50px]">
+                        <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white">FAQ’<span class="text-[#B0B7FF]">S</span></h2>
+                        <h5 class="lg:text-[18px] text-[#B9B9B9] md:text-[16px] text-[13px] w-[50%] text-white m-auto">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</h5>
+                    </div>
+                    <div class="faq-section">
+                        <div class="accordion">
+                            <div class="accordion-item p-[25px] border-[1px] border-white" id="question1">
+                              <a class="accordion-link text-white p-0 mb-[15px]" href="#question1">
+                                <div class="flex">
+                                    <h3 class="text-[16px] mb-[28px] text-white">How cooperation with Export agent is defined?</h3>
+                                </div>
+                                <ion-icon name="add-outline" class="add-outline"></ion-icon>
+                                <ion-icon name="remove-outline" class="remove-outline"></ion-icon>
+                              </a>
+                              <div class="answer">
+                                <p class="text-[#B9B9B9] text-[14px] mb-[12px]">1. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.</p>
+                                <p class="text-[#B9B9B9] text-[14px] mb-[12px]">2. Gets exclusivity in the market or area where startsthe work.</p>
+                                <p class="text-[#B9B9B9] text-[14px] mb-[12px]">3. Initiates direct contact between the supplier and thepotential buyer.</p>
+                              </div>
+                          </div>
+                         </div>
+                        <!-- <div class="faq-container flex ">
+                            <div class="faq p-[15px] mb-[28px] w-1/2">
+                                <div class="faq-question" onclick="toggleFaq(this)">
+                                    <h3 class="text-[16px] text-white">What kind of companies does Export Agent work with? <span></span></h3>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="text-[#B9B9B9] text-[14px]">1. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
+                                        <p class="text-[#B9B9B9] text-[14px]">2. Gets exclusivity in the market or area where starts the work.</p>
+                                        <p class="text-[#B9B9B9] text-[14px]">3. Initiates direct contact between the supplier and the potential buyer.</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq p-[15px] mb-[28px] w-1/2">
+                                <div class="faq-question" onclick="toggleFaq(this)">
+                                    <h3 class="text-[16px] text-white">What kind of companies does Export Agent work with?</h3>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="text-[#B9B9B9] text-[14px]">                                        1. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
+                                        <p class="text-[#B9B9B9] text-[14px]">2. Gets exclusivity in the market or area where starts the work.</p>
+                                        <p class="text-[#B9B9B9] text-[14px]">3. Initiates direct contact between the supplier and the potential buyer.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <ul>
+                            <li class="p-15px">
+                                <h3 class="text-[16px] mb-[28px] text-white">What kind of companies does Export Agent work with?</h3>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+             
+
+              </section>
+    </main>
+
+
+
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    <!-- SLICK SLIDER CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <!-- GSAP JS -->
+    <script src="assets/js/SmoothScroll.js"></script>
+    <script src="./assets/js/wow.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        let toggleBtn = document.querySelector("#navbar-toggle");
+        let collapse = document.querySelector("#navbar-collapse");
+
+        toggleBtn.onclick = () => {
+            collapse.classList.toggle("hidden");
+            collapse.classList.toggle("flex");
+        };
+
+        $('.speciality-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                // infinite: true,
+                // dots: true
+            }
+        },
+        {
+            breakpoint:768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+     
+    </script>
+    <script>
+           $('.testimonial-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                // infinite: true,
+                // dots: true
+            }
+        },
+        {
+            breakpoint:768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+    </script>
+    <script>
+           $('.blog-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                // infinite: true,
+                // dots: true
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                // infinite: true,
+                // dots: true
+            }
+        },
+        {
+            breakpoint:768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+    </script>
+</body>
+
+</html>
