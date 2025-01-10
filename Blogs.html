@@ -27,154 +27,507 @@
 
 <body>
     <main>
-        <!--     <h2 class="lg:text-[45px] md:text-[35px] text-[22px] font-bold text-white lg:w-[70%]"><span class="text-[#B0B7FF]">Client Testimonials: </span>Our Global Impact in Their Words</h2> -->
         <!-- HEADER AND BANNER -->
-        <section class="h-screen bg-[url('assets/images/Gradient1.png')] relative">
-            <div class="banner-img absolute left-0 top-0 ">
-                <img src="assets/images/Home-banner2.png" alt="banner">
-            </div>
-            <div class="header-2 ">
-                <nav class=""> 
-                    <div class="container px-4 mx-auto md:flex justify-between md:items-center py-2 md:py-[40px]  border-b-[0.2px] border-white">
-                        <div class="flex justify-between items-center ">
-                            <div class="logo">
-                                <a href="#" class="font-bold text-xl text-indigo-600"><img src="assets/images/Logo.png" alt=""></a>
+        <section class="bg-cover lg:h-[700px] md:h-[400px] h-auto relative">
+            <img src="assets/images/small-moons.png" class="absolute left-[20px] lg:block hidden top-[150px]"
+                alt="moon">
+            <img src="assets/images/banner-right2.png" class="absolute right-[0px] bottom-0 lg:block hidden "
+                alt="design">
+                <div class="header-2 ">
+                    <nav>
+                        <div
+                            class="container px-4 mx-auto lg:flex justify-between lg:items-center py-2 lg:py-[40px]  border-b-[0.2px] border-[rgba(255,255,255,0.2)]">
+                            <div class="flex justify-between items-center ">
+                                <div class="logo">
+                                    <a href="#" class="font-bold text-xl text-indigo-600"><img src="assets/images/Logo.png"
+                                            alt=""></a>
+                                </div>
+                                <button
+                                    class=" border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                                    id="navbar-toggle">
+                                    <i class="fas fa-bars"></i>
+                                </button>
                             </div>
-                            <button
-                                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
-                                id="navbar-toggle">
-                                <i class="fas fa-bars"></i>
-                            </button>
+                            <ul class="hidden z-[50] top-[58px] lg:py-[0px] py-[15px] lg:bg-transparent bg-[#080321] left-[0px] lg:w-auto w-full lg:static absolute  lg:flex flex-col lg:flex-row  mt-3 lg:mt-0 gap-[40px]"
+                                id="navbar-collapse">
+                                <li class="lg:text-start text-center">
+                                    <p class="text-white"><a href="index.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3]">Home</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class=""><a href="AboutUs.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3] hover:text-white "> About Us</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class="text-[#B3B3B3] hover:text-white"><a href="Solutions.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3] hover:text-white "> Solutions</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class="text-[#B3B3B3] hover:text-white"><a href="Buy-Sell.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3] hover:text-white ">Buy-Sell</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class="text-[#B3B3B3] hover:text-white"><a href="Blogs.html">
+                                            <h3 class="lexand text-[18px] text-white hover:text-white ">Blogs</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <div class="contact-btn lg:hidden block">
+                                       <a href="Contact.html"><button
+                                        class="lexand text-[13px] text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%] after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Contact
+                                        Us <span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="contact-btn lg:block hidden">
+                                <a href="Contact.html"><button
+                                    class="lexand text-[13px] text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%] after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Contact
+                                    Us <span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                            </div>
                         </div>
-                        <ul class="hidden md:flex flex-col md:flex-row  mt-3 md:mt-0 gap-[40px]" id="navbar-collapse">
-                            <li><p class="text-white">Home</p></li>
-                            <li><p class="text-[#B3B3B3] hover:text-white">About Us</p></li>
-                            <li><p class="text-[#B3B3B3] hover:text-white">Solutions</p></li>
-                            <li><p class="text-[#B3B3B3] hover:text-white">Buy-Sell</p></li>
-                            <li><p class="text-[#B3B3B3] hover:text-white">Contact</p></li>
-                        </ul>
-                        <div class="contact-btn">
-                            <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
-                             after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
-                             before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+                    </nav>
+                </div>
             <!-- BANNER -->
-            <div class="banner py-[77px] ps-[95px]">
-                <div class="flex items-center">
-                    <div class="w-3/6">
-                        <div class="banner-content items-center flex gap-[95px] justify-between">
-                            <div class="social-media flex flex-col items-center">
-                                <div class="img mb-[15px]">
-                                    <img src="assets/images/social-line.png" alt="social-line">
-                                </div>
-                                <div class="insta w-[50px] h-[50px] bg-[rgba(255,255,255,0.1)] rounded-full flex justify-center items-center">
-                                    <i class="fa-brands fa-square-instagram text-[23px] text-white"></i>
-                                </div>
-                                <div class="mt-[30px] w-[50px] h-[50px] bg-[rgba(255,255,255,0.1)] rounded-full flex justify-center items-center">
-                                    <i class="fa-brands fa-whatsapp text-[23px] text-white"></i>
-                                </div>
-                                <div class="mt-[30px] w-[50px] h-[50px] bg-[rgba(255,255,255,0.1)] rounded-full flex justify-center items-center">
-                                    <i class="fa-brands fa-twitter text-[23px] text-white"></i>
-                                </div>
-                                <div class="img mb-[15px] rotate-180 mt-[15px]">
-                                    <img src="assets/images/social-line.png" alt="social-line">
-                                </div>
-                            </div>
-                            <div class="banner-description">
-                                <h1 class="text-[55px] font-bold text-white">Import Export <span class="text-[#B0B7FF]">Agent for</span> International Trade</h1>
-                            <P class="text-white text--[18px]">Export Agent is the professional that your company needs if you are looking for buyers or suppliers in textile, food and beverages, agriculture products, aquaculture, plastics fields.</P>
-                            <div class="contact-btn mt-[35px]">
-                                <button class="text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%]
-                                 after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white 
-                                 before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                            </div>
-                            </div>
-                        </div>
+            <div class="banner pt-[125px] ">
+                <div class="flex items-center px-[12px] justify-center  ">
+                    <div class="left-img  md:w-auto w-[150px]">
+                        <img src="assets/images/banner-left.png" alt="" class="lg:w-auto">
                     </div>
-                    <div class="w-3/6">
-                        <img src="assets/images/home-banner-img.png" alt="home banner">
+                    <h2 class="lg:px-[0px] lg:text-[30px] md:text-[23px] text-[18px]  font-bold text-white">Home /<span
+                            class="text-[#B0B7FF]"> Blogs </span></h2>
+                    <div class="right-img  md:w-auto w-[150px]">
+                        <img src="assets/images/banner-right.png" class="lg:w-auto" alt="">
                     </div>
                 </div>
-
             </div>
         </section>
 
 
-            <!-- BLOG SECTION -->
-             <section class="py-[150px]">
-                <div class="container mx-auto">
-                    <div class="flex">
-                        <div class="w-4/12 px-[15px]">
-                            <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
-                                <div class="blog-img">
-                                    <img src="assets/images/blog-1.png" class="w-full" alt="blog">
+        <!-- BLOG SECTION -->
+        <section class="py-[150px]">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap">
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog-1.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">How to source
+                                    Indian handicraft products in 2023</h3>
+                                <p class="text-[#B9B9B9] g:text-[18px] text-[13px]">How to source Indian handicraft
+                                    products are made in 2023</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
                                 </div>
-                                <div class="blog-content mb-[30px] p-[30px] ">
-                                    <h3 class="text-[25px] text-white mb-[8px] font-semibold">How to source Indian handicraft products in 2023</h3>
-                                    <p class="text-[#B9B9B9] text-[18px]">How to source Indian handicraft products are made in 2023</p>
-                                </div>
-                                <div class="information flex justify-between p-[20px]">
-                                    <div class="user">
-                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy</p>
-                                    </div>
-                                    <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
-                                    <div class="date">
-                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>14 March, 2020</p>
-                                    </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9]  lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>14
+                                        March, 2020</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-4/12 px-[15px]">
-                            <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
-                                <div class="blog-img">
-                                    <img src="assets/images/blog-2.png" class="w-full" alt="blog">
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog-2.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Why you should
+                                    hire an export agent?</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">We are building a new source of
+                                    overseas sales for Indian firms. Having been a country.</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
                                 </div>
-                                <div class="blog-content mb-[30px] p-[30px] ">
-                                    <h3 class="text-[25px] text-white mb-[8px] font-semibold">Why you should hire an export agent?</h3>
-                                    <p class="text-[#B9B9B9] text-[18px]">We are building a new source of overseas sales for Indian firms. Having been a country.</p>
-                                </div>
-                                <div class="information flex justify-between p-[20px]">
-                                    <div class="user">
-                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy</p>
-                                    </div>
-                                    <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
-                                    <div class="date">
-                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>5 Jul, 2022</p>
-                                    </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>5
+                                        Jul, 2022</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-4/12 px-[15px]">
-                            <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
-                                <div class="blog-img">
-                                    <img src="assets/images/blog-3.png" class="w-full" alt="blog">
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 5.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Why you should
+                                    export now instead of later?</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">Your competitors are finding it
+                                    profitable to export their productsr...</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
                                 </div>
-                                <div class="blog-content mb-[30px] p-[30px] ">
-                                    <h3 class="text-[25px] text-white mb-[8px] font-semibold">Importing onions from India Made Easy</h3>
-                                    <p class="text-[#B9B9B9] text-[18px]">All you need to know about Onions Scenario before Importing from India According to India</p>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>5
+                                        Jul, 2022</p>
                                 </div>
-                                <div class="information flex justify-between p-[20px]">
-                                    <div class="user">
-                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy</p>
-                                    </div>
-                                    <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
-                                    <div class="date">
-                                        <p class="text-[#B9B9B9] text-[18px] "><span class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28 June, 2022</p>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 6.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Joint Ventures
+                                    and Technology Licensing in the USA</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">Technology licensing and joint
+                                    partnerships are two more strategies to generate..</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28
+                                        Jun, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 7.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Importing
+                                    Pomegranates from India Made Easy</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">India is often referred to be the
+                                    world's "fruit basket." We have been blessed with Indian...</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28
+                                        June, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 8.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Importing
+                                    onions from India Made Easy</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">All you need to know about Onions
+                                    Scenario before Importing from India According to India</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28
+                                        June, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 9.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Importance of
+                                    marketing plan in import export business</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">The marketing plan serves as an
+                                    implementation tool in corporate practice.</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28
+                                        Jun, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 10.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Customs
+                                    clearance to Import Export Goods in EU, UK</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">With the tightening of global trade
+                                    barriers and the requirements for compliance with..</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28
+                                        Jun, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 11.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Methods of
+                                    Payment in International Business</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">Prudent Credit Practices Credit is
+                                    extended cautiously by experienced exporters..</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>28
+                                        June, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 5.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">How to start
+                                    export business in India?</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">Introduction The decade of 90's has
+                                    witnessed the emergence of new world...</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>9
+                                        March, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 12.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">What is
+                                    Harmonised System (HS) Code and Indian Tariff...</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">Since various types of commodities
+                                    are imported and exported among different.</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>18
+                                        Jan, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-4/12 sm:w-6/12 w-full px-[12px]">
+                        <div class="blog-item mb-[30px] bg-[url('assets/images/gradient2.png')]">
+                            <div class="blog-img">
+                                <img src="assets/images/blog 13.png" class="w-full" alt="blog">
+                            </div>
+                            <div class="blog-content lg:mb-[30px] lg:p-[30px] p-[15px] ">
+                                <h3 class="lg:text-[25px] text-[18px] text-white mb-[8px] font-semibold">Introduction to
+                                    Export Management</h3>
+                                <p class="text-[#B9B9B9] lg:text-[18px] text-[13px]">What is Export? Export and Import
+                                    are two sides of the same coin namely, International...</p>
+                            </div>
+                            <div class="information flex justify-between p-[20px]">
+                                <div class="user">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-user"></i></span> Musharof Chy
+                                    </p>
+                                </div>
+                                <div class="line w-[2px] h-full bg-[#ffffff] text-transparent"> wh</div>
+                                <div class="date">
+                                    <p class="text-[#B9B9B9] lg:text-[18px] text-[13px] "><span
+                                            class="me-2 text-white"><i class="fa-solid fa-calendar-days"></i></span>18
+                                        Jan, 2022</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-             </section>
-             
-           
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <section
+            class="py-[100px] md:py-[80px] bg-[url('assets/images/gradient2.png')] sm:py-[60px] py-[40px] relative ">
+            <img src="assets/images/footer-shape-2.png" class="absolute left-0 lg:block hidden" alt="footer-shape">
+            <img src="assets/images/box.png" class="absolute right-0 bottom-0  lg:block hidden" alt="footer-shape">
+            <div class="container mx-auto">
+                <div class="footer-menu flex flex-wrap justify-between">
+                    <div class="lg:w-4/12 lg:mb-[0px] mb-[20px] px-[12px] w-full">
+                        <div class="footer-logo mb-[30px]">
+                            <img src="assets/images/Logo.png" alt="footer-logo">
+                        </div>
+                        <p class="text-[#B9B9B9] lg:text-[16px] text-[13px] font-bold mb-[20px] lg:w-[95%]">There’s
+                            nothing better than
+                            a good natter and we’d love to hear about your business.</p>
+                        <ul class="social-links flex">
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-facebook-f"></i></span></li>
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-twitter"></i></span></li>
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-linkedin-in"></i></span></li>
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-instagram"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-4/12 w-5/12 px-[12px] lg:justify-center ">
+                        <div class="links  flex flex-row flex-wrap">
+                            <h3 class="text-white w-full lg:text-[20px] text-[18px] mb-[20px] font-bold">Quick Links
+                            </h3>
+                            <ul>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Vendor
+                                            Partnership</p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Direct Sourcing
+                                        </p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Contact Us</p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Buy - Sell</p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Blogs</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-4/12 w-7/12 px-[12px]">
+                        <h3 class="text-white lg:text-[20px] text-[18px]  mb-[20px] font-bold">Contact Us</h3>
+                        <ul>
+                            <li class="flex items-center flex-wrap me-[20px] mb-[20px]"><span
+                                    class="lg:me-[20px] me-[10px] lg:w-[40px] w-[20px] lg:h-[40px] h-[20px] px-[15px] bg-cover py-[10px] flex justify-center items-center bg-[url('assets/images/bg-3.png')]"><i
+                                        class="text-white fa-solid fa-phone"></i></span>
+                                <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">+91 123 456 789</p>
+                            </li>
+                            <li class="flex items-center flex-wrap me-[20px] mb-[20px]"><span
+                                    class="lg:me-[20px] me-[10px] lg:w-[40px] w-[20px] lg:h-[40px] h-[20px] px-[15px] bg-cover py-[10px] flex justify-center items-center bg-[url('assets/images/bg-3.png')]"><i
+                                        class="text-white fa-solid fa-envelope"></i></span>
+                                <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">hello@exportagent.in</p>
+                            </li>
+                            <li class="flex items-center  me-[20px] mb-[20px]"><span
+                                    class="lg:me-[20px] me-[10px] lg:w-[40px] w-[20px] lg:h-[40px] h-[20px] px-[15px] bg-cover py-[10px] flex justify-center items-center bg-[url('assets/images/bg-3.png')]"><i
+                                        class="fa-solid text-white fa-location-dot"></i></span>
+                                <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Exult Shopper, Vesu,
+                                    Surat, GJ 395007,
+                                    India</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BOTTOM -->
+        <section
+            class="py-[15px] bg-[url('assets/images/gradient2.png')] border-t-[1px] border-[rgba(255,255,255,0.1)]">
+            <div class="container mx-auto">
+                <div class="footer-bottom flex lg:justify-between justify-center flex-wrap">
+                    <h3 class="text-[14px] text-[#B9B9B9]">© Export Agent All Right Reserved.</h3>
+                    <ul class="flex">
+                        <li class="px-[15px]"><a href="">
+                                <h3 class="text-[14px] text-[#B9B9B9]">Help</h3>
+                            </a></li>
+                        <li class="px-[15px]"><a href="">
+                                <h3 class="text-[14px] text-[#B9B9B9]">Privacy Policy</h3>
+                            </a></li>
+                        <li class="px-[15px]"><a href="">
+                                <h3 class="text-[14px] text-[#B9B9B9]">Terms Of User</h3>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-
-
 
 
     <!-- JQUERY CDN -->

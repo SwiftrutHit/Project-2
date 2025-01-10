@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Agent</title>
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FONT FAMILY CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ICONS CDN -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <!-- SLIDER CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="assets/css/common.css" class="rel">
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <!-- HEADER AND BANNER -->
+        <section class="bg-cover lg:h-[700px] md:h-[400px] h-auto relative">
+            <img src="assets/images/small-moons.png" class="absolute left-[20px] lg:block hidden top-[150px]"
+                alt="moon">
+            <img src="assets/images/banner-right2.png" class="absolute right-[0px] bottom-0 lg:block hidden "
+                alt="design">
+            <!-- <div class="banner-img absolute left-0 top-0 z-[-1] ">
+                    <img src="assets/images/Home-banner2.png" alt="banner">
+                </div> -->
+                <div class="header-2 ">
+                    <nav>
+                        <div
+                            class="container px-4 mx-auto lg:flex justify-between lg:items-center py-2 lg:py-[40px]  border-b-[0.2px] border-[rgba(255,255,255,0.2)]">
+                            <div class="flex justify-between items-center ">
+                                <div class="logo">
+                                    <a href="#" class="font-bold text-xl text-indigo-600"><img src="assets/images/Logo.png"
+                                            alt=""></a>
+                                </div>
+                                <button
+                                    class=" border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                                    id="navbar-toggle">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                            </div>
+                            <ul class="hidden z-[50] top-[58px] lg:py-[0px] py-[15px] lg:bg-transparent bg-[#080321] left-[0px] lg:w-auto w-full lg:static absolute  lg:flex flex-col lg:flex-row  mt-3 lg:mt-0 gap-[40px]"
+                                id="navbar-collapse">
+                                <li class="lg:text-start text-center">
+                                    <p class="text-white"><a href="index.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3]">Home</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class=""><a href="AboutUs.html">
+                                            <h3 class="lexand text-[18px] text-white hover:text-white "> About Us</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class="text-[#B3B3B3] hover:text-white"><a href="Solutions.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3] hover:text-white "> Solutions</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class="text-[#B3B3B3] hover:text-white"><a href="Buy-Sell.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3] hover:text-white ">Buy-Sell</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <p class="text-[#B3B3B3] hover:text-white"><a href="Blogs.html">
+                                            <h3 class="lexand text-[18px] text-[#B3B3B3] hover:text-white ">Blogs</h3>
+                                        </a></p>
+                                </li>
+                                <li class="lg:text-start text-center">
+                                    <div class="contact-btn lg:hidden block">
+                                       <a href="Contact.html"><button
+                                        class="lexand text-[13px] text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%] after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Contact
+                                        Us <span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="contact-btn lg:block hidden">
+                                <a href="Contact.html"><button
+                                    class="lexand text-[13px] text-white hover:before:w-[100%] before:transition-all after:h-[100%] after:w-[0px] after-bg-white hover:after:w-[100%] after:top-0 after:left-0 after-absolute text-[20px] font-semibold relative before:absolute before:w-[80%] before:h-[1px] before:bg-white before:bottom-0 before:left-0  border-white border-t-[1px] px-[20px] py-[15px] border-l-[1px]">Contact
+                                    Us <span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            <!-- BANNER -->
+            <div class="banner pt-[125px] ">
+                <div class="flex items-center px-[12px] justify-center  ">
+                    <div class="left-img  md:w-auto w-[150px]">
+                        <img src="assets/images/banner-left.png" alt="" class="lg:w-auto">
+                    </div>
+                    <h2 class="lg:px-[0px] lg:text-[30px] md:text-[23px] text-[18px]  font-bold text-white">Home /<span
+                            class="text-[#B0B7FF]"> About Us </span></h2>
+                    <div class="right-img  md:w-auto w-[150px]">
+                        <img src="assets/images/banner-right.png" class="lg:w-auto" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="min-h-screen section-1 py-16 relative z-10">
+            <!-- Added Decorative Images -->
+            <div class=" ">
+                <div class="absolute hidden lg:block left-0 w-32 xl:w-40 -z-10">
+                    <img src="./assets/images/aboutUs/Vector.png" alt="not found" class="w-full h-auto">
+                </div>
+                <div class="absolute hidden lg:block right-0 bottom-0 w-18 xl:w-32 -z-10">
+                    <img src="./assets/images/aboutUs/SVG.png" alt="not found" class="w-full h-auto">
+                </div>
+            </div>
+            <!-- aboutus intro Section -->
+            <section class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="relative">
+                        <img src="./assets/images/aboutUs/Group 1000005387.png" alt="Export Import Illustration"
+                            class="w-full h-64 md:h-96 object-contain">
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="text-white text-2xl md:text-3xl font-bold mb-4 lg:w-[70%]">  Export-import from<span
+                            class="text-[#b0b7ff]"> India made easy.</span></h2>
+                        <!-- <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                            Export-import from <span class="text-[#6366F1]">India</span> made easy.
+                        </h1> -->
+                        <p class="text-gray-400">
+                            See how we have can help your company establish an international trade.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Export Section -->
+            <section class=" my-16 mx-4">
+                <div class="container mx-auto py-16 px-4 bg-gradient-to-t from-[#0a0627] to-[#120c3a] ">
+                    <div class="max-w-3xl mx-auto text-center mb-12">
+                        <h2 class="text-white text-2xl md:text-3xl font-bold mb-4">Exp<span
+                                class="text-[#b0b7ff]">ort</span></h2>
+                        <p class="text-gray-400">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin
+                            ac bibendum vel, semper sed ex. Praesent maximus dapibus lectus.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                        <div class="flex items-start space-x-3">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                              <P class="text-white lg:text-[18px] text-[13px]">Finds the best approach to exporting for your company.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                              <P class="text-white lg:text-[18px] text-[13px]">Sales of your products and services to GCC, Africa, South-East Asia.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                              <P class="text-white lg:text-[18px] text-[13px]">Negotiates on prices and business conditions.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                              <P class="text-white lg:text-[18px] text-[13px]">Coordinates the signing of contracts with potential buyers.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                              <P class="text-white lg:text-[18px] text-[13px]">Daily communication with customers.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                              <P class="text-white lg:text-[18px] text-[13px]">Represents company at exhibitions and business meetings.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Import Section -->
+            <section class="mx-4">
+                <div class="container mx-auto bg-gradient-to-t from-[#0a0627] to-[#120c3a]  py-16 px-4">
+                    <div class="max-w-3xl mx-auto text-center mb-12">
+                        <h2 class="text-white text-2xl md:text-3xl font-bold mb-4">Imp<span
+                                class="text-[#b0b7ff]">ort</span></h2>
+                        <p class="text-gray-400">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin
+                            ac bibendum vel, semper sed ex. Praesent maximus dapibus lectus.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 max-w-4xl mx-auto">
+
+                        <div class="flex items-start space-x-3 mb-4">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300">Finds the best approach to import for your company.</p>
+                        </div>
+                        <div class="flex items-start space-x-3 mb-4">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300">Negotiates on prices and business conditions.</p>
+                        </div>
+                        <div class="flex items-start space-x-3 mb-4">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300">Daily communication with suppliers.</p>
+                        </div>
+                        <div class="flex items-start space-x-3 mb-4">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300">Import of products and services from India.</p>
+                        </div>
+                        <div class="flex items-start space-x-3 mb-4">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300">Coordinates the signing of contracts with potential buyers.</p>
+                        </div>
+                        <div class="flex items-start space-x-3 mb-4">
+                            <div class="pt-1">
+                                <img src="./assets/images/orange-Arrow.png" alt="not found arrow" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300">Represents company at exhibitions and business meetings.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="section-2">
+            <!-- Vision Section -->
+            <section class="container mx-auto px-4 py-16 md:py-24">
+                <div class="grid grid-cols-1 relative lg:grid-cols-2 gap-8 items-center z-10">
+                    <div class="bg-text absolute top-0 right-0 -z-10">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-[#0f0b28]">Our Vision</h1>
+                    </div>
+                    <div class=" order-2 lg:order-1">
+                        <img src="./assets/images/aboutUs/Group 1000005402.png" alt="Vision Illustration"
+                            class="w-full h-64 md:h-96 object-contain">
+                    </div>
+                    <div class="space-y-6 order-1 lg:order-2">
+                        <h2 class="sm:text-3xl lg:text-4xl text-xl text-white font-bold tracking-wide mb-4">
+                            Our <span class="text-[#B0B7FF]"> Vision</span>
+                        </h2>
+                        <p class="text-gray-400 leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac
+                            bibendum vel, semper sed ex. Praesent maximus dapibus lectus. Mauris Praesent, nisi sit amet
+                            pharetra gravida, ante metus condimentum nunc, id facilisis ligula a consectetur magna.
+                            Nunc consequat dapibus ex. In vestibulum lorem. Aenean pulvinar pretium eros a dictum.
+                            Duis et efficitur nulla.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission Section -->
+            <section class="container mx-auto px-4 pb-16 md:pb-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative z-10">
+                    <div class="bg-text absolute top-0 right-0 lg:left-0 -z-10">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-[#0f0b28]">Our Mission</h1>
+                    </div>
+                    <div class="space-y-6">
+                        <h2 class="sm:text-3xl lg:text-4xl text-xl text-white font-bold tracking-wide mb-4">
+                            Our <span class="text-[#B0B7FF]"> Mission</span>
+                            </h2>
+                        <p class="text-gray-400 leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex odio, sollicitudin ac
+                            bibendum vel, semper sed ex. Praesent maximus dapibus lectus. Mauris Praesent, nisi sit amet
+                            pharetra gravida, ante metus condimentum nunc, id facilisis ligula a consectetur magna.
+                            Nunc consequat dapibus ex. In vestibulum lorem. Aenean pulvinar pretium eros a dictum.
+                            Duis et efficitur nulla.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/aboutUs/Group 1000005387.png" alt="Mission Illustration"
+                            class="w-full h-64 md:h-96 object-contain">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="section-3">
+            <!-- Network -->
+            <section class="container mx-auto px-4 pb-16 md:pb-24">
+                <div class="grid grid-cols-1 relative lg:grid-cols-2 gap-8 items-center z-10">
+                    <div class="bg-text absolute top-0 right-0 -z-10">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-[#0f0b28]">Network</h1>
+                    </div>
+                    <div class=" order-2 lg:order-1">
+                        <img src="./assets/images/aboutUs/sec-3img.png" alt="Vision Illustration"
+                            class="w-full h-64 md:h-96 object-contain">
+                    </div>
+                    <div class="space-y-6 order-1 lg:order-2">
+                        <h2 class="sm:text-3xl lg:text-4xl text-xl text-white font-bold tracking-wide mb-4">
+                            Net<span class="text-[#B0B7FF]">work</span>
+                            </h2>
+                        <div>
+                            <p class="text-gray-400 leading-relaxed">
+                                We aim at creating a worldwide network of credible businesses and professionals that
+                                will ultimately develop a healthy ecosystem where international trade thrive and
+                                enterprises collaborate efficiently.
+                            </p>
+                            <p class="text-gray-400 leading-relaxed ">
+                                We always ensure that business entities, industry experts, community members, employees
+                                or any parties involved in a trade are trustworthy, capable, and reliable. This helps us
+                                cultivate a dynamic ecosystem where safe and reliable business transactions can take
+                                place.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data & insights -->
+            <section class="container mx-auto px-4 pb-16 md:pb-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative z-10">
+                    <div class="bg-text absolute top-0 right-0 lg:left-0 -z-10">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-[#0f0b28]">Data & Insights</h1>
+                    </div>
+                    <div class="space-y-6">
+                        <h2 class="sm:text-3xl lg:text-4xl text-xl text-white font-bold tracking-wide mb-4">
+                            Date & <span class="text-[#B0B7FF]"> Insights</span>
+                            </h2>
+                        <div>
+                            <p class="text-gray-400 leading-relaxed">
+                                We collect, process, and analyze all kinds of data related to the global trade and
+                                latest
+                                trends across different industries to help our business associates better understand not
+                                only the industry outlook but also the global market allowing them to make well-informed
+                                business decisions
+                            </p>
+                            <p class="text-gray-400 leading-relaxed">
+                                Organizing information, transforming them into insights, and making them accessible can
+                                help
+                                businesses discover untapped business opportunities, leading to more transactions.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/aboutUs/sec-4img.png" alt="Mission Illustration"
+                            class="w-full h-64 md:h-96 object-contain">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="section-4">
+            <!-- Safe And Reliable Transactions -->
+            <section class="container mx-auto px-4 pb-16 md:pb-24">
+                <div class="grid grid-cols-1 relative lg:grid-cols-2 gap-8 items-center z-10">
+                    <div class="bg-text absolute top-0 right-0 -z-10">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-[#0f0b28]">Safe And Reliable Transactions</h1>
+                    </div>
+                    <div class=" order-2 lg:order-1">
+                        <img src="./assets/images/aboutUs/sec-3img.png" alt="Vision Illustration"
+                            class="w-full h-64 md:h-96 object-contain">
+                    </div>
+                    <div class="space-y-6 order-1 lg:order-2">
+                        <h2 class="sm:text-3xl lg:text-4xl text-xl text-white font-bold tracking-wide mb-4">
+                            Safe and Reliable <span class="text-[#B0B7FF]"> Transactions</span>
+                            </h2>
+                        <div>
+                            <p class="text-gray-400 leading-relaxed">
+                                Lastly, to realize our vision of enabling products cross market borders freely, we
+                                believe we are also on a mission to provide any means necessary to ensure safe
+                                transactions between importer and exporter. This includes quality management, secured
+                                payment, logistics management, and so on.
+                            </p>
+                            <p class="text-gray-400 leading-relaxed ">
+                                By ensuring that our ecosystem is genuinely safe, we can allow our network to forge new
+                                business relationships and explore new business opportunities. This, in turn, helps the
+                                world get closer to market equilibrium.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- section 5 -->
+        <section class="section-5 pb-16">
+            <div class="container mx-auto px-5">
+                <div class=" mb-16">
+                    <h2 class="sm:text-3xl lg:text-4xl text-xl text-white lg:w-[80%] font-bold tracking-wide mb-4">
+                        We are building an ecosystem where export and import of products is more <span class="text-[#B0B7FF]"> reliable, transparent and efficient.</span>
+                        </h2>
+                    <p class="text-[#B9B9B9] md:text-lg xl:max-w-[71rem]">
+                        We set out this venture with an aim of empowering businesses by enabling great product cross
+                        market
+                        borders more freely. In our efforts to attain this vision; over the years we have diversified
+                        into
+                        various field, gained expertise, and that has forayed into Export/ Import, Trading business and
+                        joining hands as a commission agent in export-import.
+                    </p>
+                </div>
+
+                <div class="lg:flex 2xl:gap-0 xl:gap-10 lg:gap-8 gap-0">
+                    <div class="lg:w-3/6 mb-6 lg:my-auto">
+                        <div>
+                            <img src="/assets/images/aboutUs/map-img.png.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:w-3/6">
+                        <div>
+                            <div class="space-y-8">
+                                <!-- Domestic Sellers -->
+                                <div class="md:space-y-4 space-y-2">
+                                    <ul>
+                                        <li
+                                            class="md:text-[27px] text-[21px] font-semibold text-white list-disc list-inside">
+                                            For domestic sellers
+                                        </li>
+                                    </ul>
+                                    <p class="text-[#B9B9B9] text-lg xl:leading-[31px]">
+                                        For foreign and domestic sellers / suppliers, we represent them (after due
+                                        diligence) and extend our services by way of marketing their products within the
+                                        Indian and International market.
+                                    </p>
+                                </div>
+
+                                <!-- Foreign Buyers -->
+                                <div class="md:space-y-4 space-y-2">
+                                    <ul>
+                                        <li
+                                            class="md:text-[27px] text-[21px] font-semibold text-white list-disc list-inside">
+                                            For foreign buyer
+                                        </li>
+                                    </ul>
+                                    <p class="text-[#B9B9B9] text-lg xl:leading-[31px]">
+                                        For foreign buyers we represent them as their Agents, right from sourcing the
+                                        right
+                                        supplier to negotiating the prices to delivering the products to the importer.
+                                        We
+                                        act as an intermediary between foreign buyers and Indian sellers for the given
+                                        products.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <section class="section-6  lg:py-[150px] md:py-[120px] sm:py-[90px] py-[60px]">
+            <div class="container mx-auto px-5">
+                <div class="sec6-title">
+                    <h1
+                        class="2xl:text-[45px] xl:text-[40px] lg:text-[35px] md:text-[30px] text-[23px] font-bold mb-6 text-white md:w-3/4">
+                        We develop integrated global <span class="text-[#B0B7FF]">supply chain</span> for various
+                        products.
+                    </h1>
+                </div>
+                <div>
+                    <p class="text-gray-400 leading-relaxed lg:w-[80%]">
+                        Sourcing the Right Buyers and Suppliers as per the client’s product requirements and verifying
+                        the credentials as per the needs of the client. Quality Control and Physical Inspection /
+                        verification of the supplier. Acquiring product samples to ensure that the product meets our
+                        clients’ requirements and specifications.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed lg:w-[80%] ">
+                        Negotiating the Payment Terms on behalf of our clients. Conducting 3rd party inspection of the
+                        order at the time of shipment. Adhering to the shipment schedule and ensuring timely delivery of
+                        the order to our client. Follow-Up on the safety of Money for our business partners. Conducting
+                        after-sales services.
+                    </p>
+                </div>
+
+                <div class="sec6-timeline">
+                    <!-- remain time line -->
+                </div>
+            </div>
+        </section>
+        <!-- section 8 -->
+        <section class="section-8 bg-[#0f0b28]">
+            <!-- Our Approach -->
+            <section class="container mx-auto px-4 py-16 md:py-24">
+                <div class="grid grid-cols-1 relative lg:grid-cols-2 gap-8 items-center z-10">
+                    <div class="space-y-6 ">
+                        <h2 class="sm:text-3xl lg:text-4xl text-xl text-white font-bold tracking-wide mb-4">
+                            Our <span class="text-[#B0B7FF]"> Approach</span>
+                            </h2>
+                        <div>
+                            <p class="text-gray-400 leading-relaxed">
+                                We are all about collaboration and co-creation. Our interdisciplinary team is
+                                international, working tirelessly to improve the collective experiences our business
+                                associates with an innovative, holistic approach connecting global buyers with the right
+                                suppliers.
+                            </p>
+                            <p class="text-gray-400 leading-relaxed ">
+                                With a network across the globe, we are able to bring international expertise to the
+                                fore and apply it at a local level while navigating the many complexities of
+                                export-import arising with each unique project.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/aboutUs/sec-8img.png" alt="Mission Illustration"
+                            class="w-full h-64 md:h-96 object-contain">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- FOOTER SECTION -->
+        <section
+            class="py-[100px] md:py-[80px] bg-[url('assets/images/gradient2.png')] sm:py-[60px] py-[40px] relative ">
+            <img src="assets/images/footer-shape-2.png" class="absolute left-0 lg:block hidden" alt="footer-shape">
+            <img src="assets/images/box.png" class="absolute right-0 bottom-0  lg:block hidden" alt="footer-shape">
+            <div class="container mx-auto">
+                <div class="footer-menu flex flex-wrap justify-between">
+                    <div class="lg:w-4/12 lg:mb-[0px] mb-[20px] px-[12px] w-full">
+                        <div class="footer-logo mb-[30px]">
+                            <img src="assets/images/Logo.png" alt="footer-logo">
+                        </div>
+                        <p class="text-[#B9B9B9] lg:text-[16px] text-[13px] font-bold mb-[20px] lg:w-[95%]">There’s
+                            nothing better than a good natter and we’d love to hear about your business.</p>
+                        <ul class="social-links flex">
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-facebook-f"></i></span></li>
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-twitter"></i></span></li>
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-linkedin-in"></i></span></li>
+                            <li class=" me-[20px]"><span
+                                    class="w-[40px] h-[40px] px-[15px] bg-cover py-[10px] bg-[url('assets/images/bg-3.png')] flex justify-center items-center"><i
+                                        class="text-white fa-brands fa-instagram"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-4/12 w-5/12 px-[12px] lg:justify-center ">
+                        <div class="links  flex flex-row flex-wrap">
+                            <h3 class="text-white w-full lg:text-[20px] text-[18px] mb-[20px] font-bold">Quick Links
+                            </h3>
+                            <ul>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Vendor
+                                            Partnership
+                                        </p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Direct Sourcing
+                                        </p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Contact Us</p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Buy - Sell</p>
+                                    </a></li>
+                                <li class="mb-[10px]"><a href="">
+                                        <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Blogs</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-4/12 w-7/12 px-[12px]">
+                        <h3 class="text-white lg:text-[20px] text-[18px]  mb-[20px] font-bold">Contact Us</h3>
+                        <ul>
+                            <li class="flex items-center flex-wrap me-[20px] mb-[20px]"><span
+                                    class="lg:me-[20px] me-[10px] lg:w-[40px] w-[20px] lg:h-[40px] h-[20px] px-[15px] bg-cover py-[10px] flex justify-center items-center bg-[url('assets/images/bg-3.png')]"><i
+                                        class="text-white fa-solid fa-phone"></i></span>
+                                <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">+91 123 456 789</p>
+                            </li>
+                            <li class="flex items-center flex-wrap me-[20px] mb-[20px]"><span
+                                    class="lg:me-[20px] me-[10px] lg:w-[40px] w-[20px] lg:h-[40px] h-[20px] px-[15px] bg-cover py-[10px] flex justify-center items-center bg-[url('assets/images/bg-3.png')]"><i
+                                        class="text-white fa-solid fa-envelope"></i></span>
+                                <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">hello@exportagent.in</p>
+                            </li>
+                            <li class="flex items-center  me-[20px] mb-[20px]"><span
+                                    class="lg:me-[20px] me-[10px] lg:w-[40px] w-[20px] lg:h-[40px] h-[20px] px-[15px] bg-cover py-[10px] flex justify-center items-center bg-[url('assets/images/bg-3.png')]"><i
+                                        class="fa-solid text-white fa-location-dot"></i></span>
+                                <p class="lg:text-[18px] text-[13px] font-bold text-[#B9B9B9]">Exult Shopper, Vesu,
+                                    Surat,
+                                    GJ 395007,
+                                    India</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER BOTTOM -->
+        <section
+            class="py-[15px] bg-[url('assets/images/gradient2.png')] border-t-[1px] border-[rgba(255,255,255,0.1)]">
+            <div class="container mx-auto">
+                <div class="footer-bottom flex lg:justify-between justify-center flex-wrap">
+                    <h3 class="text-[14px] text-[#B9B9B9]">© Export Agent All Right Reserved.</h3>
+                    <ul class="flex">
+                        <li class="px-[15px]"><a href="">
+                                <h3 class="text-[14px] text-[#B9B9B9]">Help</h3>
+                            </a></li>
+                        <li class="px-[15px]"><a href="">
+                                <h3 class="text-[14px] text-[#B9B9B9]">Privacy Policy</h3>
+                            </a></li>
+                        <li class="px-[15px]"><a href="">
+                                <h3 class="text-[14px] text-[#B9B9B9]">Terms Of User</h3>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- SLICK SLIDER CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <!-- GSAP JS -->
+    <script src="assets/js/SmoothScroll.js"></script>
+    <script src="./assets/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
